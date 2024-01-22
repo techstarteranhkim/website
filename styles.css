@@ -1,3 +1,61 @@
+/* Für mobile Geräte */
+@media only screen and (max-width: 350px) {
+    .header, .body {
+        margin-bottom: 10px;
+    }
+
+    .header img {
+        width: 50px;
+    }
+
+    .body img {
+        width: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+}
+
+/* Für Tablet-Geräte */
+@media only screen and (min-width: 351px) and (max-width: 780px) {
+    .header, .body {
+        margin-bottom: 15px;
+    }
+
+    .header img {
+        width: 75px;
+    }
+
+    .body img {
+        width: 60%;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 2fr));
+    }
+}
+
+/* Für Laptop-Geräte */
+@media only screen and (min-width: 781px) {
+    .header, .body {
+        margin-bottom: 20px;
+    }
+
+    .header img {
+        width: 100px;
+    }
+
+    .body img {
+        width: 40%;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 3fr));
+    }
+}
+
+
 .header, .body {
     margin-bottom: 20px;
 }
@@ -113,6 +171,7 @@ hr {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     justify-content: center;
+    align-items: center;
     max-width: 1000px;
     margin: auto;
     gap: 10px;
