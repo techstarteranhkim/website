@@ -1,73 +1,83 @@
-/* Für mobile Geräte */
 @media only screen and (max-width: 350px) {
 
     .header,
     .body {
-        margin-bottom: 10px;
+        margin-bottom: 10px
     }
 
     .header img {
-        width: 50px;
+        width: 50px
     }
 
     .body img {
-        width: 100%;
+        width: 100%
     }
 
     .grid-container {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-        /* background-color: red; */
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr))
     }
 }
 
-/* Für Tablet-Geräte */
 @media only screen and (min-width: 351px) and (max-width: 780px) {
 
     .header,
     .body {
-        margin-bottom: 15px;
+        margin-bottom: 15px
     }
 
     .header img {
-        width: 75px;
+        width: 75px
     }
 
     .body img {
-        width: 60%;
+        width: 60%
     }
 
     .grid-container {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 2fr));
-        /* background-color: blue; */
+        grid-template-columns: repeat(auto-fill, minmax(150px, 2fr))
     }
 }
 
-/* Für Laptop-Geräte */
 @media only screen and (min-width: 781px) {
 
     .header,
     .body {
-        margin-bottom: 20px;
+        margin-bottom: 20px
     }
 
     .header img {
-        width: 100px;
+        width: 100px
     }
 
     .body img {
-        width: 40%;
+        width: 40%
     }
 
     .grid-container {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 3fr));
-        /* background-color: green; */
+        grid-template-columns: repeat(auto-fill, minmax(200px, 3fr))
     }
 }
 
-
 .header,
 .body {
-    margin-bottom: 20px;
+    margin-bottom: 20px
+}
+
+form {
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1)
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px
 }
 
 button {
@@ -80,28 +90,28 @@ button {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
     font-style: italic;
-    border-radius: 5%;
+    border-radius: 5%
 }
 
 .button:hover {
-    cursor: pointer;
+    cursor: pointer
 }
 
 .header button:first-child {
     background-color: #7cb9fa;
-    color: white;
+    color: #fff
 }
 
 .header button:last-child {
-    color: #7cb9fa;
+    color: #7cb9fa
 }
 
 .header button:hover:first-child {
-    background-color: #245c9c;
+    background-color: #245c9c
 }
 
 .header button:hover:last-child {
-    background-color: #828282;
+    background-color: #828282
 }
 
 .header img {
@@ -109,72 +119,72 @@ button {
     max-width: 100%;
     width: 100px;
     height: auto;
-    aspect-ratio: auto;
+    aspect-ratio: auto
 }
 
 .body button {
     background-color: gray;
-    color: white;
+    color: #fff
 }
 
 .body img {
     aspect-ratio: auto;
     max-width: 100%;
     width: auto;
-    height: auto;
+    height: auto
 }
 
 hr {
     border: 0;
     border-top: 1px solid #eee;
-    margin: 5px 0;
+    margin: 5px 0
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center
 }
 
 .header img {
-    float: left;
+    float: left
 }
 
 .header button {
-    margin-right: 20px;
+    margin-right: 20px
 }
 
 .body {
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 .body h3 {
-    font-size: medium;
+    font-size: medium
 }
 
 .body img {
-    width: 40%;
+    width: 40%
 }
 
 .body button {
-    margin: 10px;
+    margin: 10px
 }
 
 .description button:hover {
-    background-color: rgb(0, 0, 0);
+    background-color: #000
 }
 
 .images {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap
 }
 
 .images img {
     width: 30%;
     margin: 10px;
-    aspect-ratio: auto;
+    aspect-ratio: auto
 }
 
 .grid-container {
@@ -186,28 +196,28 @@ hr {
     margin: auto;
     gap: 10px;
     border-color: gray;
-    border: 0px solid grey;
+    border: 0 solid grey
 }
 
 .grid-item {
     width: 100%;
     position: relative;
-    border: 0px solid grey;
+    border: 0 solid grey
 }
 
 .grid-item img {
     position: absolute;
     max-width: 100%;
     max-height: 100%;
-    object-fit: cover;
+    object-fit: cover
 }
 
 .content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 .description {
-    margin-left: 20px;
+    margin-left: 20px
 }
