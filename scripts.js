@@ -29,6 +29,7 @@ function submitLoginForm() {
         email: document.getElementById('email').value,
         password: document.getElementById('password').value
     };
+      
 
     console.log(contact);
     window.location.href = 'index.html';

@@ -1,0 +1,11 @@
+var obj = {
+  "name": "John",
+  "age": 30,
+  "city": "New York"
+};
+
+for (var key in obj) {
+  if (obj.hasOwnProperty(key)) {
+    console.log(key + " -> " + obj[key]);
+  }
+}

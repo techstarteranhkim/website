@@ -164,7 +164,8 @@ hr {
 }
 
 .body img {
-    width: 40%
+    width: 40%;
+    aspect-ratio: auto
 }
 
 .body button {
@@ -196,13 +197,13 @@ hr {
     margin: auto;
     gap: 10px;
     border-color: gray;
-    border: 0 solid grey
+    border: 2px solid grey
 }
 
 .grid-item {
     width: 100%;
     position: relative;
-    border: 0 solid grey
+    border: 5px solid grey
 }
 
 .grid-item img {
