@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aufgabe5</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        #circle {
+            width: 100px;
+            height: 100px;
+            background-color: #260097;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        input[type="number"] {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #653fd5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: #260097;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="circle"></div>
+    <input type="number" id="radiusInput" placeholder="Radius eingeben">
+    <button id="changeSizeButton">Größe ändern</button>
+    <p id="diameterOutput"></p>
+
+    <script src="aufgabe5.js"></script>
+</body>
+</html>
